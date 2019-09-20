@@ -27,12 +27,11 @@ attr_accessor :name, :years
   end 
   
   def best_tipper
-    best_tipper_meal == meals.max do |meal_a, meal_b|
+    best_tipped_meal == meals.max do |meal_a, meal_b|
       meal_a.top <=> meal_b.tip
   end 
   
   best_tipped_meal.customer
-  
   
   
 end
