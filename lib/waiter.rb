@@ -32,6 +32,5 @@ attr_accessor :name, :years
   end 
   
   best_tipped_meal.customer
-  
-  
+  end
 end
