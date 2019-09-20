@@ -16,13 +16,13 @@ attr_accessor :name, :years
     @@all 
   end 
   
-  def new_meal(waiter, total, tip)
-     Meal.new(waiter, self, total, tip)
+  def new_meal(customer, total, tip)
+     Meal.new(self, customer, total, tip)
   end
   
   def meals 
     Meal.all.select do |meal|
-      meal.customer == self
+      meal.waiter == self
     end 
   end 
   
