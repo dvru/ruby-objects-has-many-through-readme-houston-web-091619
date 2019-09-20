@@ -26,13 +26,6 @@ attr_accessor :name, :years
     end 
   end 
   
-  def best_tipper 
-    Meal.all.sort_bt(:tip).last.customer
-  end 
-  
-  
-  
-  
   
   
 end
